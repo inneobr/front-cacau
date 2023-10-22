@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary font-montserrat text-white;
+}
+
+.pretitle {
+  @apply font-alexBrush text-[42px] text-accent leading-none;
+}
+
+.pretitle-right{
+  @apply font-alexBrush text-[42px] text-white leading-none text-center;
+}
+
+.h2 {
+  @apply text-[32px] xl:text-[38px] font-semibold leading-none;
+}
+
+.bnt {
+  @apply w-full rounded-full cursor-pointer transition-all  flex justify-center items-center font-medium;
+}
+
+.bnt-sm {
+  @apply w-[146px] h-[50px];
+}
+
+.bnt-lg {
+  @apply w-[160px] h-[54px];
+}
+
+.bnt-accent {
+  @apply bg-accent text-white hover:bg-accent-hover;
+}
+
+.bnt-white {
+  @apply bg-white text-primary hover:bg-white/80;
+}
+
+.section {
+  @apply py-12 xl:py-24;
+}
+
+.rap-progress {
+  @apply !bg-[#6519c8];
+}
+
+.rap-pin {
+  @apply !bg-white;
+}
+
+.rap-container {
+  @apply !p-0;
+}
+
+.rap-container .rap-volume .rap-volume-bnt svg {
+  @apply w-[22px];
+}
+
+.rap-container .rap-pp-button svg {
+  @apply w-[14px];
+}
+
+.rap-container .rap-pp-button svg path,
+.rap-container .rap-volume .rap-volume-btn svg path {
+  @apply fill-accent;
+}
+
+.rap-current-time,
+.rap-total-time {
+  @apply font-montserrat text-[13px] font-medium;
+}
+
+.rap-container .rap-slider {
+  @apply !bg-[#33335b] !h-[2px];
+}
+
+.rap-volume-btn.rap-volume-open svg path {
+  @apply fill-white;
+}
+
+.rap-volume-controls {
+  @apply !bg-primary/80;
+}
+
+.rap-container .rap-controls span {
+  @apply text-[15px];
+}
+
+.rap-container .rap-slider .rap-progress .rap-pin {
+  @apply !w-[14px] !h-[14px] !bg-white;
+}
+
+.rap-container .rap-slider .rap-progress .rap-pin:hover {
+  @apply scale-[1.2] transition-all duration-300;
+}
+
+.active {
+  @apply border-b-2 border-accent;
+}
