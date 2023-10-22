@@ -9,7 +9,7 @@ const Eventos = () => {
 
   const getEventos = async() =>{
     try{
-      const response = await axios.get(`http://191.101.78.101:9100/v1/eventos`);
+      const response = await axios.get(`https://server.inneo.org/v1/eventos`);
       const data = response.data;
       setEvento(data);
     }catch(e){
