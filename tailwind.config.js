@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         singerOverlay: 'url(/assets/hero/singer-overlay.png)',
-        newsletter: 'url(/assets/hero/newsletter.png)',
+        newsletter: 'url(/assets/newsletter/bg.png)',
       },
       fontFamily: {
         alexBrush: [`--fontalexBrush`, 'sans-serif'],
