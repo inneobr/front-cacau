@@ -1,11 +1,29 @@
 "use client";
-import HeaderSection from "@/components/HeaderSection";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import HeaderSection from "@/components/header/HeaderSection";
+import useSWR from "swr";
 import EventBox from "./Eventbox";
 
-const Eventos = () => {  
-  const [evento, setEvento] = useState([]);
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+const Eventos = () => { 
+  const { data, error } = useSWR('https://api.inneo.org/v1/eventos', fetcher);
+  if (error) return;
+  if (!data) return 'Loading...'; 
+  
+  
+  return (
+    <section className="section" id="eventos">
+      <div className="container mx-auto"> 
+        <HeaderSection pretitle='Agenda' title='Eventos'/> 
+        <EventBox eventos={data}/>
+      </div>
+    </section>
+  )
+}
+export default Eventos
+
+/*
+const [evento, setEvento] = useState([]);
 
   const getEventos = async() =>{
     try{
@@ -20,17 +38,7 @@ const Eventos = () => {
   useEffect(() => {
     getEventos();
   },[]);
-  
-  return (
-    <section className="section" id="eventos">
-      <div className="container mx-auto"> 
-        <HeaderSection pretitle='Agenda' title='Eventos'/> 
-        <EventBox eventos={evento}/>
-      </div>
-    </section>
-  )
-}
-export default Eventos
+  */
 
  
 

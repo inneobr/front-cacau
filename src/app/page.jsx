@@ -1,7 +1,8 @@
 import Player from "@/components/Player"
-import Hero from "@/components/hero"
-import Eventos from "../components/eventos/Eventos"
 import Header from "@/components/header"
+import Hero from "@/components/hero"
+import Albums from "../components/albums/Curso"
+import Eventos from "../components/eventos/Eventos"
 
 export default function Home() {  
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Player />
       <Eventos />
+      <Albums />
     </main>
   )
 }

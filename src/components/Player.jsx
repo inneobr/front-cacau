@@ -17,7 +17,7 @@ const Player = () => {
             <div className="container mx-auto flex flex-col justify-between items-center xl:flex-row">
                 <div className='hidden w-[300px] xl:flex items-center gap-x-4'>
                     <div className='relative w-12 h-12'>
-                        <Image src={'/assets/player/avatar.png'} fill priority alt=''/>                       
+                        <Image src={'/assets/player/musical.png'} fill priority alt=''/>                       
                     </div>
                     <div className='leading-none'>
                         <div className='text-lg font-medium'>Cacau Ramos</div>
@@ -26,7 +26,7 @@ const Player = () => {
                 </div>
 
                 <div className='w-full max-w-4xl '>
-                    <AudioPlayer src='/assets/player/freedom.mp3'
+                    <AudioPlayer src='https://r13.ciclano.io:15199/stream'
                         style={{
                             background: 'transparent',
                             boxShadow: 'none',

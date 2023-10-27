@@ -15,7 +15,7 @@ const EventBox = ({ eventos } ) => {
             <div className="flex flex-col xl:flex-row justify-between h-[620px] xl:h-full gap-x-4">
                 
                 <div className="hidden xl:flex w-[400px] ">
-                    <Image src={'/assets/eventos/singer.png'}
+                    <Image src={'/assets/eventos/singer.webp'}
                         className='rounded-[10px] border-[5px] shadow-2xl'
                         width={358} 
                         height={489} 

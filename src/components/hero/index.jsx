@@ -1,10 +1,9 @@
 'use client';
-
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import { TypeAnimation } from 'react-type-animation';
-import { fadeIn } from '../../variants';
+import { fadeIn } from '../../../variants';
 
 const locationSequence = [
   'Blusa Jurema', 3000,
@@ -15,9 +14,9 @@ const locationSequence = [
 
 ]
 
-const Hero = () => {
+const Hero = () => {  
   return(
-    <section className="h-[80vh] xl:h-[800px]" id="home">
+    <section className="h-[80vh] xl:h-[820px]" id="home">
       <div className="container mx-auto h-full flex justify-center items-center xl:justify-start">
         <div className="h-full flex flex-col justify-center items-center xl:items-start z-20 pt-12">
           <MouseParallaxContainer 

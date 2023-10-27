@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const links = [
     {name: 'Home', path: 'home'},
     {name: 'Eventos', path: 'eventos'},
-    {name: 'Galeria', path: 'galeria'},
+    {name: 'Cursos', path: 'curso'},
     {name: 'Contato', path: '#'},
 ]
 

@@ -5,11 +5,6 @@ import { useEffect, useState } from 'react';
 import Navbar from '../navbar';
 import Social from '../social';
 
-//menus
-/*
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants'*/
-
 const Header = () => {
   const [active, setActive] = useState(false);
 
